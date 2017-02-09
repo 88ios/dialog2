@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dialog对话框汇总</string>
+
+    <string-array
+        name="aikaifa">
+        <item >爱开发</item>
+        <item >荣耀</item>
+        <item >魅族</item>
+    </string-array>
+</resources>

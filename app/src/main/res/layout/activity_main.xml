@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <com.aikaifa.bankcard.AikaifaFlowLayout
+        android:id="@+id/flowLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test3"/>
+    </com.aikaifa.bankcard.AikaifaFlowLayout>
+
+    <com.aikaifa.bankcard.ProgressWebView
+        android:id="@+id/baseweb_webview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></com.aikaifa.bankcard.ProgressWebView>
+
+    <Button
+        android:id="@+id/btnMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="主线程执行" />
+
+    <Button
+        android:id="@+id/btnBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="后台线程执行" />
+
+    <Button
+        android:id="@+id/btnAsync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="后台线程强制执行" />
+
+    <Button
+        android:id="@+id/btnPosting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="和发送方同一线程执行" />
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转" />
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
